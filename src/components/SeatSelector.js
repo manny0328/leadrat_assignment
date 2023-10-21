@@ -1,8 +1,8 @@
+// SeatSelector.js
 import React, { useState } from 'react';
 
 const SeatSelector = ({ seatTypes }) => {
   const [selectedType, setSelectedType] = useState('Standard');
-  const [selectedSeats, setSelectedSeats] = useState([]);
 
   const handleTypeChange = (e) => {
     setSelectedType(e.target.value);
@@ -18,7 +18,6 @@ const SeatSelector = ({ seatTypes }) => {
           </option>
         ))}
       </select>
-      <p>Selected Seats: {selectedSeats.length}</p>
     </div>
   );
 };
